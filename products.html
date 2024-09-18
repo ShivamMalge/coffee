@@ -5,168 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branches</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');    
+
+        body {
+            background-image: url(./414413.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h5 {
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        h6 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .button {
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #6f4e37;
+            color: white;
+        }
+
+        .card {
+            opacity: 0.79;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            position: relative;
+            margin: 0;
+        }
+
+        .circle {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: gold;
+            position: absolute;
+            top: 10px;
+            right: -40px;
+            z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .circle {
+                height: 60px;
+                width: 60px;
+                right: -30px;
+                top: 5px;
+            }
+
+            .topnav {
+                flex-direction: column;
+            }
+
+            .topnav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');    
-
-
-body{
-    background-image: url(./414413.jpg);
-    backdrop-filter: 10px;
-}
-h5{
-    text-align: left;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.button{
-    display: flex;
-    padding: 10px;
-    gap: 10px;
-    opacity: 1;
-}
-
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-
-.heading{
-    display: flex;
-    gap: 0px;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    flex-direction: row-reverse;
-    
- }
- h1{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    position: absolute;
-    margin-right: 30px;
-    margin-top: 45px;
-    
- }
-
- .circle{
-    display: flex;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: gold;
-    position: relative;
-    z-index: -1;
-    margin-top: 10px;
-    margin-right: 12.5px;
-}
-
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background: transparent;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #6f4e37;
-  color: white;
-}
-.card{
-    opacity: 0.79;  
-}
-h6{
-  font-weight: 700;
-}
-</style>
 <body>
-<div class="wrapper">    
-    <div class="topnav">
-        <a  href="index.html">Home</a>
-        <a class="active" href="#branches">Branches</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-   <div class="container">
-    <div class="card" style="width: 18rem;" style="opacity: 0.5;">
-        <img src="arabica.webp" style="height: 170px;" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Arabica Beans</h5>
-          <h6>&#8377 219/100g</h6>
-          <p class="card-text">Coffee produced from the less acidic, more bitter, and more highly caffeinated robusta bean makes up most of the remaining coffee production. The natural populations of Coffea arabica are restricted to the forests of South Ethiopia and Yemen.</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
+    <div class="wrapper">    
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="#branches">Branches</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="liberica.jpg" class="card-img-top" alt="..." style="height: 175px;">
-        <div class="card-body">
-          <h5 class="card-title">Liberica Beans</h5>
-          <h6>&#8377 72.99/100g</h6>
-          <p class="card-text">Coffea liberica, commonly known as the Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola).</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="arabica.webp" class="card-img-top" alt="Arabica Beans" style="height: 170px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Arabica Beans</h5>
+                            <h6>&#8377 219/100g</h6>
+                            <p class="card-text">Coffee produced from the less acidic, more bitter, and more highly caffeinated robusta bean makes up most of the remaining coffee production. The natural populations of Coffea arabica are restricted to the forests of South Ethiopia and Yemen.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="liberica.jpg" class="card-img-top" alt="Liberica Beans" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Liberica Beans</h5>
+                            <h6>&#8377 72.99/100g</h6>
+                            <p class="card-text">Coffea liberica, commonly known as the Liberian coffee, is a species of flowering plant in the family Rubiaceae from which coffee is produced. It is native to western and central Africa (from Liberia to Uganda and Angola).</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="best-robusta-coffee.jpg" class="card-img-top" alt="Robusta Beans" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Robusta Beans</h5>
+                            <h6>&#8377 221.99/100g</h6>
+                            <p class="card-text">Robusta, so predominantly cultivated that it is often simply termed Coffea robusta, or commonly robusta coffee is a species of coffee that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="excelsa.jpg" class="card-img-top" alt="Excelsa Beans" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Excelsa Beans</h5>
+                            <h6>&#8377 113.78/100g</h6>
+                            <p class="card-text">The Excelsa coffee bean grows on a coffee plant that is part of the Liberica coffee plant group. Excelsa coffee can be grown in locations that those other beans cannot since it doesn’t require a huge amount of water to grow. It also doesn’t require the best soil to grow in.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="best-robusta-coffee.jpg" class="card-img-top" alt="..." style="height: 175px;">
-        <div class="card-body">
-          <h5 class="card-title">Robusta Beans</h5>
-          <h6>&#8377 221.99/100g</h6>
-          <p class="card-text">Robusta, so predominantly cultivated that it is often simply termed Coffea robusta, or commonly robusta coffee is a species of coffee that has its origins in central and western sub-Saharan Africa. It is a species of flowering plant in the family Rubiaceae. </p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="excelsa.jpg" class="card-img-top" alt="..." style="height: 175px;">
-        <div class="card-body">
-          <h5 class="card-title">Excelsa Beans</h5>
-          <h6>&#8377 113.78/100g</h6>
-          <p class="card-text">The Excelsa coffee bean grows on a coffee plant that is part of the Liberica coffee plant group. Excelsa coffee can be grown in locations that those other beans cannot since it doesn’t require a huge amount of water to grow. It also doesn’t require the best soil to grow in.</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Order Now</a>
-          </div>
+        <div class="heading">
+            <h1>Ginyard Cafe</h1>
+            <div class="circle"></div>
         </div>
     </div>
-</div>
-<div class="heading">
-    <h1>Ginyard Cafe</h1>
-    <div class="circle"></div>
-    </div>
-</div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
