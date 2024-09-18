@@ -5,165 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branches</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');    
+
+        body {
+            background-image: url(./414413.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h5 {
+            text-align: center;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+        }
+
+        .button {
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+            opacity: 1;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #6f4e37;
+            color: white;
+        }
+
+        .card {
+            opacity: 0.79;
+            margin-bottom: 20px;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: aliceblue;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            position: relative;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: gold;
+            z-index: -1;
+            position: absolute;
+            top: -50px;
+            right: -50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .circle {
+                height: 80px;
+                width: 80px;
+                top: -30px;
+                right: -30px;
+            }
+
+            .topnav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .topnav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');    
-
-
-body{
-    background-image: url(./414413.jpg);
-    backdrop-filter: 10px;
-}
-h5{
-    text-align: center;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-}
-
-.button{
-    display: flex;
-    padding: 10px;
-    gap: 10px;
-    opacity: 1;
-}
-
-.container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    margin-top: 100px;
-    
- }
- h1{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    position: absolute;
-    margin-right: 30px;
-    margin-top: 45px;
-    
- }
-
- .circle{
- position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: gold;
-    z-index: -1;
-    top: -60px;   
-    left: 830px; 
- }
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background: transparent;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #6f4e37;
-  color: white;
-}
-
-.card{
-    opacity: 0.79;
-  
-}
-</style>
 <body>
-<div class="wrapper">    
-    <div class="topnav">
-        <a  href="index.html">Home</a>
-        <a class="active" href="#branches">Branches</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-   <div class="container">
-    <div class="card" style="width: 18rem;" style="opacity: 0.5;">
-        <img src="KrkqQo.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Hebbal</h5>
-          <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Our Shops</a>
-          <a href="products.html" class="btn btn-primary">Our Products</a>
-          </div>
+    <div class="wrapper">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="#branches">Branches</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="th.jpg" class="card-img-top" alt="..." style="height: 175px;">
-        <div class="card-body">
-          <h5 class="card-title">RT Nagar</h5>
-          <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Our Shops</a>
-          <a href="products.html" class="btn btn-primary">Our Products</a>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="KrkqQo.webp" class="card-img-top" alt="Hebbal">
+                        <div class="card-body">
+                            <h5 class="card-title">Hebbal</h5>
+                            <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Our Shops</a>
+                                <a href="products.html" class="btn btn-primary">Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="th.jpg" class="card-img-top" alt="RT Nagar" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">RT Nagar</h5>
+                            <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Our Shops</a>
+                                <a href="products.html" class="btn btn-primary">Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="wp4079861.webp" class="card-img-top" alt="Rajajinagara" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rajajinagara</h5>
+                            <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Our Shops</a>
+                                <a href="products.html" class="btn btn-primary">Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="coffee-1.jpg" class="card-img-top" alt="Church Street" style="height: 175px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Church Street</h5>
+                            <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets.</p>
+                            <div class="button">
+                                <a href="#" class="btn btn-primary">Our Shops</a>
+                                <a href="products.html" class="btn btn-primary">Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="wp4079861.webp" class="card-img-top" alt="..." style="height: 175px;">
-        <div class="card-body">
-          <h5 class="card-title">Rajajinagara</h5>
-          <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Our Shops</a>
-          <a href="products.html" class="btn btn-primary">Our Products</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="coffee-1.jpg" class="card-img-top" alt="..." style="height: 175px;">
-        <div class="card-body">
-          <h5 class="card-title">Church Street</h5>
-          <p class="card-text">Check out our nearest outlets or order our products from the nearest outlets</p>
-        <div class="button">
-          <a href="#" class="btn btn-primary">Our Shops</a>
-          <a href="products.html" class="btn btn-primary">Our Products</a>
-          </div>
+        <div class="heading">
+            <h1>Ginyard Cafe</h1>
+            <div class="circle"></div>
         </div>
     </div>
-</div>
-<div class="heading">
-    <h1>Ginyard Cafe</h1>
-    <div class="circle"></div>
-    </div>
-</div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
